@@ -4,10 +4,10 @@ import {TransitionGroup, CSSTransition} from "react-transition-group";
 
 const PostList = ({posts, title, remove}) => {
 
-    if(!posts.length) {
+    if (!posts.length) {
         return (
             <h1 style={{textAlign: 'center'}}>
-                Fuck off
+                Посты не найдены!
             </h1>
         )
     }
@@ -24,7 +24,7 @@ const PostList = ({posts, title, remove}) => {
                         timeout={500}
                         classNames="post"
                     >
-                        <PostItem remove={remove} post={post} key={index}/>
+                        <PostItem remove={remove} number={index + 1} post={post} index={++index}/>
                     </CSSTransition>
                 )}
             </TransitionGroup>

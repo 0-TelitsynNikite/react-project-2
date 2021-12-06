@@ -5,7 +5,3 @@
     border: 1px solid teal;
     background: #333;
 }
-
-.myInput::placeholder {
-    color: aquamarine;
-}
