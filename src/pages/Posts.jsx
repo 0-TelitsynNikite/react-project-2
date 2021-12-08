@@ -85,6 +85,11 @@ function Posts() {
             {isPostsLoading &&
             <div style={{display: 'flex', justifyContent: 'center', marginTop: 50}}><Loader/></div>
             }
+            <Pagination
+                page={page}
+                changePage={changePage}
+                totalPages={totalPages}
+            />
         </div>
     );
 }

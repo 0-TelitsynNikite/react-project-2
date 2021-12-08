@@ -2,13 +2,13 @@ import React from 'react';
 import MyButton from "./UI/button/MyButton";
 import {useHistory} from 'react-router-dom';
 
-const PostItem = ({index,...props}) => {
+const PostItem = (props) => {
     const router = useHistory()
 
     return (
         <div className="post">
             <div className="post__content">
-                <strong>{index}. {props.post.title}</strong>
+                <strong>{props.post.id}. {props.post.title}</strong>
                 <div>
                     {props.post.body}
                 </div>

@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Arial";
-    color: cornflowerblue;
 }
 
 #root {
@@ -14,7 +12,6 @@
 
 .App {
     width: 800px;
-    background: #333;
 }
 
 .post {
@@ -67,7 +64,7 @@
     display: flex;
     align-items: center;
     padding: 0 15px;
-    background: #444;
+    background: lightgray;
 }
 
 .navbar__links {
